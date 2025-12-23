@@ -12,8 +12,9 @@ const Academics = () => {
         if (highlightProgram) {
             const element = document.getElementById(highlightProgram);
             if (element) {
+                // Small delay to ensure rendering is complete
                 setTimeout(() => {
-                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    element.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
             }
         }
@@ -34,7 +35,7 @@ const Academics = () => {
                     <div
                         key={course.id}
                         id={course.slug}
-                        className={`flex flex-col md:flex-row gap-8 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} ${highlightProgram === course.slug ? 'ring-2 ring-secondary p-4 rounded-xl bg-gray-50' : ''}`}
+                        className={`scroll-mt-28 flex flex-col md:flex-row gap-8 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} ${highlightProgram === course.slug ? 'ring-2 ring-secondary p-4 rounded-xl bg-gray-50' : ''}`}
                     >
                         <div className="w-full md:w-1/2">
                             <img
