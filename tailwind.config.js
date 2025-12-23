@@ -11,6 +11,10 @@ export default {
           DEFAULT: '#002147', // Oxford Blue (Academic)
           light: '#1a365d',
         },
+        secondary: {
+          DEFAULT: '#800000', // Maroon
+          light: '#9b2c2c',
+        },
         accent: {
           DEFAULT: '#800000', // Maroon
           light: '#9b2c2c',
