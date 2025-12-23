@@ -8,6 +8,17 @@ const Academics = () => {
     const [searchParams] = useSearchParams();
     const highlightProgram = searchParams.get('program');
 
+    React.useEffect(() => {
+        if (highlightProgram) {
+            const element = document.getElementById(highlightProgram);
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+    }, [highlightProgram]);
+
     return (
         <div className="animate-fade-in pb-20">
             <SEO title="Academics" description="Explore our undergraduate and graduate programs including BBA, BCA, and MBA." />

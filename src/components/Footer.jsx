@@ -40,10 +40,15 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-bold mb-6 text-secondary border-b border-gray-700 pb-2 inline-block">Our Programs</h4>
                         <ul className="space-y-3">
-                            {['BBA - Bachelor in Business Admin', 'BCA - Bachelor in Computer App', 'MBA - Master in Business Admin', 'BBS - Bachelor in Business Studies'].map((item) => (
-                                <li key={item}>
-                                    <Link to="/academics" className="text-gray-400 hover:text-white transition-colors text-sm">
-                                        {item}
+                            {[
+                                { name: 'BBA - Bachelor in Business Admin', link: '/academics?program=bba' },
+                                { name: 'BCA - Bachelor in Computer App', link: '/academics?program=bca' },
+                                { name: 'MBA - Master in Business Admin', link: '/academics?program=mba' },
+                                { name: 'BBS - Bachelor in Business Studies', link: '/academics?program=bbs' }
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <Link to={item.link} className="text-gray-400 hover:text-white transition-colors text-sm">
+                                        {item.name}
                                     </Link>
                                 </li>
                             ))}
