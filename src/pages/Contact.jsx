@@ -15,16 +15,16 @@ const Contact = () => {
     };
 
     return (
-        <div className="animate-fade-in pb-20">
+        <div className="animate-fade-in pb-12 md:pb-20">
             <SEO title="Contact Us" description="Get in touch with us for inquiries about admissions, programs, or general questions." />
-            <div className="bg-primary text-white py-16 mb-12">
+            <div className="bg-primary text-white py-12 md:py-16 mb-8 md:mb-12">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl font-bold font-serif mb-4">Contact Us</h1>
-                    <p className="text-xl text-gray-200">We'd love to hear from you. Get in touch with us.</p>
+                    <h1 className="text-3xl md:text-4xl font-bold font-serif mb-4">Contact Us</h1>
+                    <p className="text-lg md:text-xl text-gray-200">We'd love to hear from you. Get in touch with us.</p>
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
                 {/* Contact Info */}
                 <div className="space-y-8">
                     <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">

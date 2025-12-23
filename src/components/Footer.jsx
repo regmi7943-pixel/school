@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white pt-16 pb-8">
+        <footer className="bg-gray-900 text-white pt-12 md:pt-16 pb-8">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
                     {/* Logo & About */}
                     <div className="space-y-4">
                         <h3 className="text-2xl font-serif font-bold text-white mb-4">Lumbini Academic College</h3>

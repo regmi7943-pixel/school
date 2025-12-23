@@ -65,26 +65,26 @@ const Home = () => {
             </section>
 
             {/* Academic Programs */}
-            <section className="bg-gray-100 py-20">
+            <section className="bg-gray-100 py-12 md:py-20">
                 <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-8 md:mb-12">
                         <span className="text-secondary font-bold tracking-widest text-sm uppercase">Academics</span>
-                        <h2 className="text-4xl font-bold font-serif text-primary mt-2">Our Popular Programs</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold font-serif text-primary mt-2">Our Popular Programs</h2>
                         <div className="w-20 h-1 bg-secondary mx-auto mt-4"></div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                         {courses.map((course) => (
                             <CourseCard key={course.id} course={course} />
                         ))}
                     </div>
-                    <div className="text-center mt-12">
+                    <div className="text-center mt-8 md:mt-12">
                         <Link to="/academics" className="btn-secondary">View All Programs</Link>
                     </div>
                 </div>
             </section>
 
             {/* Events Section */}
-            <section className="container mx-auto px-4 py-20">
+            <section className="container mx-auto px-4 py-12 md:py-20">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12">
                     <div>
                         <span className="text-secondary font-bold tracking-widest text-sm uppercase">Happenings</span>

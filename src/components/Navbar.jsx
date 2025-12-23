@@ -30,8 +30,8 @@ const Navbar = () => {
                         <GraduationCap className="w-8 h-8 text-primary" />
                     </div>
                     <div className="flex flex-col">
-                        <span className="font-serif text-xl md:text-2xl font-bold leading-tight tracking-wide">Lumbini Academic</span>
-                        <span className="text-xs md:text-sm text-gray-300 font-light tracking-widest uppercase">College</span>
+                        <span className="font-serif text-lg md:text-2xl font-bold leading-tight tracking-wide">Lumbini Academic</span>
+                        <span className="text-[10px] md:text-sm text-gray-300 font-light tracking-widest uppercase">College</span>
                     </div>
                 </Link>
 

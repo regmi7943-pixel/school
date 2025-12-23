@@ -15,8 +15,8 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 py-16">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="container mx-auto px-4 py-12 md:py-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-20">
                     <div>
                         <img
                             src="https://images.unsplash.com/photo-1595152452543-e5cca283f547?q=80&w=2070&auto=format&fit=crop"

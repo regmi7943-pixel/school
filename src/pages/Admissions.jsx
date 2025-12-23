@@ -24,16 +24,16 @@ const Admissions = () => {
     };
 
     return (
-        <div className="animate-fade-in pb-20">
+        <div className="animate-fade-in pb-12 md:pb-20">
             <SEO title="Admissions" description="Apply online for BBA, BCA, and MBA programs at Lumbini Academic College." />
-            <div className="bg-secondary text-white py-16 mb-12">
+            <div className="bg-secondary text-white py-12 md:py-16 mb-8 md:mb-12">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl font-bold font-serif mb-4">Admissions Open 2024</h1>
-                    <p className="text-xl text-blue-100">Take the first step towards your future.</p>
+                    <h1 className="text-3xl md:text-4xl font-bold font-serif mb-4">Admissions Open 2024</h1>
+                    <p className="text-lg md:text-xl text-blue-100">Take the first step towards your future.</p>
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
                 {/* Information Side */}
                 <div>
                     <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">

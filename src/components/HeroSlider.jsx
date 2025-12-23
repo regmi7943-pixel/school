@@ -37,7 +37,7 @@ const slides = [
 
 const HeroSlider = () => {
     return (
-        <div className="h-[500px] md:h-[600px] lg:h-[700px] w-full relative group">
+        <div className="h-[calc(100vh-80px)] min-h-[500px] md:h-[600px] lg:h-[700px] w-full relative group">
             <Swiper
                 modules={[Autoplay, EffectFade, Navigation, Pagination]}
                 effect="fade"
@@ -61,18 +61,18 @@ const HeroSlider = () => {
                                 className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10000ms] ease-linear transform scale-100 animate-slow-zoom"
                                 style={{ backgroundImage: `url(${slide.image})` }}
                             ></div>
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent flex items-center">
-                                <div className="container mx-auto px-4 md:px-8">
-                                    <div className="max-w-xl text-white space-y-6 animate-fade-in-up">
-                                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold font-serif leading-tight">
+                            <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-transparent flex items-center">
+                                <div className="container mx-auto px-6 md:px-8">
+                                    <div className="max-w-xl text-white space-y-4 md:space-y-6 animate-fade-in-up">
+                                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold font-serif leading-tight">
                                             {slide.title}
                                         </h1>
-                                        <p className="text-lg md:text-xl md:opacity-90 border-l-4 border-secondary pl-4">
+                                        <p className="text-base sm:text-lg md:text-xl md:opacity-90 border-l-4 border-secondary pl-4">
                                             {slide.subtitle}
                                         </p>
                                         <Link
                                             to={slide.link}
-                                            className="inline-block bg-secondary hover:bg-white hover:text-secondary text-white px-8 py-3 text-lg font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 shadow-lg mt-4"
+                                            className="inline-block bg-secondary hover:bg-white hover:text-secondary text-white px-6 py-2 md:px-8 md:py-3 text-base md:text-lg font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 shadow-lg mt-2 md:mt-4"
                                         >
                                             {slide.cta}
                                         </Link>

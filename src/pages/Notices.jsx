@@ -5,12 +5,12 @@ import SEO from '../components/SEO';
 
 const Notices = () => {
     return (
-        <div className="animate-fade-in pb-20">
+        <div className="animate-fade-in pb-12 md:pb-20">
             <SEO title="Notices" description="Stay updated with the latest news, exam schedules, and events." />
-            <div className="bg-primary text-white py-16 mb-12">
+            <div className="bg-primary text-white py-12 md:py-16 mb-8 md:mb-12">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl font-bold font-serif mb-4">Notice Board</h1>
-                    <p className="text-xl text-gray-200">Stay updated with the latest news and announcements.</p>
+                    <h1 className="text-3xl md:text-4xl font-bold font-serif mb-4">Notice Board</h1>
+                    <p className="text-lg md:text-xl text-gray-200">Stay updated with the latest news and announcements.</p>
                 </div>
             </div>
 

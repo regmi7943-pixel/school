@@ -17,12 +17,12 @@ const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     return (
-        <div className="animate-fade-in pb-20">
+        <div className="animate-fade-in pb-12 md:pb-20">
             <SEO title="Gallery" description="View photos of our campus, events, and student life." />
-            <div className="bg-primary text-white py-16 mb-12">
+            <div className="bg-primary text-white py-12 md:py-16 mb-8 md:mb-12">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl font-bold font-serif mb-4">Photo Gallery</h1>
-                    <p className="text-xl text-gray-200">Glimpses of life at Lumbini Academic College.</p>
+                    <h1 className="text-3xl md:text-4xl font-bold font-serif mb-4">Photo Gallery</h1>
+                    <p className="text-lg md:text-xl text-gray-200">Glimpses of life at Lumbini Academic College.</p>
                 </div>
             </div>
 
